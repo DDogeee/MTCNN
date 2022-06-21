@@ -1,7 +1,7 @@
 import cv2
 
 def detect_face(img, mtcnn):
-    try:
+    # try:
         bboxs, scores = mtcnn.detect(img)
         print('Detected',len(scores),'faces')
         for num ,(bbox, score) in enumerate(zip(bboxs, scores)):
@@ -10,6 +10,6 @@ def detect_face(img, mtcnn):
             cv2.imshow('face_'+str(num), face)
             cv2.waitKey(0)
             cv2.destroyAllWindows()
-    except:
-        print('Can\'t detect face')
+    # except:
+    #     print('Can\'t detect face')
 
