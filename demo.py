@@ -15,4 +15,8 @@ if __name__ == '__main__':
     mtcnn = MTCNN()
     opt = parser_.parse_args()
     img = cv2.imread(opt.path)
+<<<<<<< HEAD
     detect_face(img, mtcnn)
+=======
+    detect_face(img, mtcnn)
+>>>>>>> 1bcff4621591fc421a52663e2fac1ee7aa1c264e
