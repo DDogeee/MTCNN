@@ -1,6 +1,7 @@
 from modules.mtcnn import MTCNN
 import cv2
 import warnings
+
 from api import detect_face
 warnings.filterwarnings("ignore")
 
@@ -14,4 +15,4 @@ if __name__ == '__main__':
     mtcnn = MTCNN()
     opt = parser_.parse_args()
     img = cv2.imread(opt.path)
-    detect_face(mtcnn, img)
+    detect_face(img, mtcnn)
